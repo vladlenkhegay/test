@@ -1,6 +1,6 @@
 import '../scss/style.scss'
-import '..style/style.css'
-import '..style/styleaside.css'
+// import '..style/style.css'
+// import '..style/styleaside.css'
 
 console.log('It works!')
 
