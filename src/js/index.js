@@ -1,4 +1,4 @@
-import 'src/scss/style.scss'
+import '/src/scss/style.scss'
 // import '..style/style.css'
 // import '..style/styleaside.css'
 
