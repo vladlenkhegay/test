@@ -2,6 +2,44 @@ import '/src/scss/style.scss'
 // import '..style/style.css'
 // import '..style/styleaside.css'
 
+import Swiper from 'swiper';
+import { Navigation, Pagination } from 'swiper/modules';
+
+const Swiper1 = new Swiper('.swiper', {
+    // configure Swiper to use modules
+    modules: [Navigation, Pagination],
+});
+
+
+const Swiper2 = new Swiper('.myswiper', {
+    // Optional parameters
+    slidesPerView: 2,
+    spaceBetween: 220,
+    freeMode: true,
+
+    // If we need pagination
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
+});
+
+// var wiper = new Swiper(".mySwiper", {
+//     slidesPerView: 2,
+//     spaceBetween: 220,
+//     freeMode: true,
+//     pagination: {
+//         el: ".swiper-pagination",
+//         clickable: true,
+//     },
+// });
+
+
 console.log('It works!')
 
 
@@ -28,7 +66,7 @@ document.getElementById("toggleButton").addEventListener("click", function () {
     let element = document.getElementById("hiddenElement");
     let buttonText = document.getElementById("toggleText");
     let buttonIcon = document.getElementById("toggleIcon");
-    
+
 
     if (element.style.display === "none") {
         element.style.display = "block";
@@ -42,15 +80,8 @@ document.getElementById("toggleButton").addEventListener("click", function () {
     }
 });
 
-var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 2,
-    spaceBetween: 220,
-    freeMode: true,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-});
+
+
 
 const openMenuLink = document.getElementById('openMenu');
 const closeMenuLink = document.getElementById('closeMenu');
@@ -62,7 +93,7 @@ openMenuLink.addEventListener('click', (event) => {
 });
 
 closeMenuLink.addEventListener('click', (event) => {
-    event.preventDefault();  
+    event.preventDefault();
     menu1.style.display = 'none';  // Прячем меню
 });
 
