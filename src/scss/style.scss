@@ -2,6 +2,7 @@
 @import 'swiper/css';
 @import 'swiper/css/pagination';
 @import 'swiper/css/navigation';
+@import 'fonts.scss';
 
 html {
     box-sizing: border-box;
@@ -10,7 +11,15 @@ html {
 
 html,
 body {
-    font-family: 'TT Lakes';
+    @font-face {
+        font-family: "TT Lakes Regular";
+        src: url("https://db.onlinewebfonts.com/t/f845acb18bd09864e4d77d93cedc1261.eot");
+        src: url("https://db.onlinewebfonts.com/t/f845acb18bd09864e4d77d93cedc1261.eot?#iefix")format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/f845acb18bd09864e4d77d93cedc1261.woff2")format("woff2"),
+        url("https://db.onlinewebfonts.com/t/f845acb18bd09864e4d77d93cedc1261.woff")format("woff"),
+        url("https://db.onlinewebfonts.com/t/f845acb18bd09864e4d77d93cedc1261.ttf")format("truetype"),
+        url("https://db.onlinewebfonts.com/t/f845acb18bd09864e4d77d93cedc1261.svg#TT Lakes Regular")format("svg");
+    }
 }
 
 * {
@@ -108,6 +117,7 @@ ul {
 
 .bg-color {
     background-color: #ffffff;
+    width: 100%;
 }
 
 .header__top {
@@ -1208,8 +1218,14 @@ textarea {
     border-radius: 2px;
 }
 
-@media (min-width: 320px) {
-    
+
+
+@media (min-width: 330px) {
+
+    // .wid {
+    //     display: none;
+    // }
+
     .recla__y {
         position: absolute;
         z-index: 12;
@@ -1285,17 +1301,17 @@ textarea {
 
     .footer__text-1 {
         text-align: left;
-        width: 218px;
+        width: 100%;
     }
 
     .footer__text-2 {
-        width: 214px;
+        width: 100%;
     }
 
 
     .footer__text-3 {
         text-align: right;
-        width: 213px;
+        width: 100%;
     }
 
 
@@ -1304,7 +1320,7 @@ textarea {
         flex-direction: row;
         justify-content: space-between;
 
-        width: 720px;
+        width: 100%;
         height: 70px;
     }
 
@@ -1331,7 +1347,7 @@ textarea {
     }
 
     .offers__text {
-        width: 720px;
+        width: 100%;
     }
 
 
@@ -1346,11 +1362,11 @@ textarea {
     }
 
     .offers__flex {
-        width: 690px;
+        width: 100%;
     }
 
     .offers__block {
-        width: 720px;
+        width: 95%;
         height: 324px;
         display: flex;
         flex-direction: column;
@@ -1360,7 +1376,8 @@ textarea {
 
 
     .remont__block {
-        display: flex;
+        display: flex; 
+        width: 100%;
     }
 
 
@@ -1371,11 +1388,6 @@ textarea {
 
     .remont__hiden-flex {
         width: 737px;
-    }
-
-
-    .remont__block {
-        width: 770px;
     }
 
     .remont__flex {
@@ -1392,6 +1404,7 @@ textarea {
 
     .slider__block-position {
         display: block;
+        width: 100%;
     }
 
 
@@ -1417,10 +1430,6 @@ textarea {
         width: 736px;
     }
 
-    .slider__block-position {
-        width: 770px;
-    }
-
     .brans_hidden {
         display: none;
     }
@@ -1430,12 +1439,14 @@ textarea {
     }
 
     .wrapper {
-        max-width: 770px;
+        min-width: 100%;
+        margin: 0 auto;
         padding: 0px 20px;
     }
 
     .header__line {
         left: 35px;
+        display: block;
     }
 
     .header__line::after {
