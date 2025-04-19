@@ -2,7 +2,6 @@
 @import 'swiper/css';
 @import 'swiper/css/pagination';
 @import 'swiper/css/navigation';
-@import 'fonts.scss';
 
 html {
     box-sizing: border-box;
@@ -10,16 +9,8 @@ html {
 }
 
 html,
-body {
-    @font-face {
-        font-family: "TT Lakes Regular";
-        src: url("https://db.onlinewebfonts.com/t/f845acb18bd09864e4d77d93cedc1261.eot");
-        src: url("https://db.onlinewebfonts.com/t/f845acb18bd09864e4d77d93cedc1261.eot?#iefix")format("embedded-opentype"),
-        url("https://db.onlinewebfonts.com/t/f845acb18bd09864e4d77d93cedc1261.woff2")format("woff2"),
-        url("https://db.onlinewebfonts.com/t/f845acb18bd09864e4d77d93cedc1261.woff")format("woff"),
-        url("https://db.onlinewebfonts.com/t/f845acb18bd09864e4d77d93cedc1261.ttf")format("truetype"),
-        url("https://db.onlinewebfonts.com/t/f845acb18bd09864e4d77d93cedc1261.svg#TT Lakes Regular")format("svg");
-    }
+body { 
+    font-family: 'TT Lakes Medium';
 }
 
 * {
@@ -52,7 +43,6 @@ ul {
     font-weight: normal;
     padding: 0;
     list-style-type: none;
-    font-family: 'TT Lakes';
 }
 
 ol,
@@ -60,17 +50,34 @@ ul {
     list-style: none;
 }
 
-// @font-face {
-//     font-family: 'TT Lakes';
-//     src: url('TTLakes-Medium.eot');
-//     src: local('TT Lakes Medium'), local('TTLakes-Medium'),
-//         url('TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
-//         url('TTLakes-Medium.woff2') format('woff2'),
-//         url('TTLakes-Medium.woff') format('woff'),
-//         url('TTLakes-Medium.ttf') format('truetype');
-//     font-weight: 500;
-//     font-style: normal;
-// }
+
+
+@font-face {
+    font-family: 'TT Lakes Regular';
+    src: url('../fonts/TT\ Lakes\ Neue\ Trial\ Regular.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes Bold';
+    src: url('../fonts/TT\ Lakes\ Neue\ Trial\ Bold.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes Medium';
+    src: url('../fonts/TT\ Lakes\ Neue\ Trial\ Medium.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes Mini';
+    src: url('../fonts/TT\ Lakes\ Neue\ Trial\ Light.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
 
 // @font-face {
 //     font-family: 'TT Lakes Compressed';
@@ -233,10 +240,12 @@ ul {
 
 .service__title {
     font-size: 30px;
-    font-weight: 700;
+    font-weight: 900;
     line-height: 40px;
     letter-spacing: -0.6px;
     color: #1B1C21;
+
+    font-family: 'TT Lakes Bold';
 
 }
 
@@ -292,6 +301,7 @@ ul {
     line-height: 20px;
     letter-spacing: 0.2px;
     color: #1B1C21;
+    font-family: 'TT Lakes Mini';
 }
 
 .content__text_margin {
@@ -781,7 +791,7 @@ div.offers__flex_none {
 .chake__top {
     width: 288px;
 
-    font-family: 'TT Lakes';
+    font-family: 'TT Lakes Mini';
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
@@ -1157,6 +1167,7 @@ textarea {
 .aside-button__number {
     font-size: 24px;
     font-weight: 900;
+    font-family: 'TT Lakes Bold';
 }
 
 .aside-button__language {
