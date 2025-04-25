@@ -27,17 +27,6 @@ const Swiper2 = new Swiper('.myswiper', {
     },
 });
 
-// var wiper = new Swiper(".mySwiper", {
-//     slidesPerView: 2,
-//     spaceBetween: 220,
-//     freeMode: true,
-//     pagination: {
-//         el: ".swiper-pagination",
-//         clickable: true,
-//     },
-// });
-
-
 console.log('It works!')
 
 
@@ -79,8 +68,6 @@ document.getElementById("toggleButton").addEventListener("click", function () {
 });
 
 
-
-
 const openMenuLink = document.getElementById('openMenu');
 const closeMenuLink = document.getElementById('closeMenu');
 const menu1 = document.getElementById('menuaside');
@@ -114,3 +101,21 @@ setupMenu("link1", "link2", "menu1");
 
 // Настраиваем второе меню
 setupMenu("link3", "link4", "menu2");
+
+document.getElementById("toggleButton-content").addEventListener("click", function () {
+    let element = document.getElementById("hiddenElement-content");
+    let buttonText = document.getElementById("toggleText-content");
+    let buttonIcon = document.getElementById("toggleIcon-content");
+
+
+    if (element.style.display === "none") {
+        element.style.display = "block";
+        buttonText.textContent = "Скрыть";
+        buttonIcon.src = "image/dropup.png"; // Меняем картинку
+    } else {
+        element.style.display = "none";
+        buttonText.textContent = "Читать далее";
+        buttonIcon.src = "image/icon.svg"; // Возвращаем картинку
+        buttonIcon.alt = "Показать";
+    }
+});

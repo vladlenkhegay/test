@@ -1,0 +1,100 @@
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .header__block-1,
+.header .header__block-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 88px;
+}
+
+.header .header__block-2 {
+    gap: 16px;
+}
+
+.header__top button.header__btn_color {
+    width: 40px;
+    height: 40px;
+    background-color: var(--light-pink);
+    border: none;
+    border-radius: 50%;
+    padding: 12px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__line {
+    position: relative;
+    left: 16px;
+}
+
+.header__line::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    right: -15px;
+    z-index: 1;
+    background-color: var(--light-grey);
+    width: 2px;
+    height: 32px;
+    margin-top: 18px;
+}
+
+.header__line::after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -15px;
+    z-index: 1;
+    background-color: var(--light-grey);
+    width: 2px;
+    height: 32px;
+    margin-top: 18px;
+    display: none;
+}
+
+.header__block-2 button.header__btn-1,
+.header__block-2 button.header__btn-2,
+.header__block-2 button.header__btn-3 {
+    display: none;
+}
+
+.header__block-2 .header__btn-3 {
+    margin-right: 12px;
+}
+
+.header__btn-4 {
+    position: relative;
+}
+
+.header__btn-4::before {
+    content: '';
+    position: absolute;
+    top: -12px;
+    left: -15px;
+    z-index: 1;
+    background-color: var(--light-grey);
+    width: 2px;
+    height: 32px;
+    margin-top: 18px;
+    display: none;
+}
+
+.header__about-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+}
+
+.header__about-option p {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    display: none;
+}

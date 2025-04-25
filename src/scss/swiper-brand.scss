@@ -1,0 +1,138 @@
+.brans {
+    width: 240px;
+    height: 72px;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    border: 1px solid var(--light-grey);
+}
+
+.brans__center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.brans__next {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid var(--light-pink);
+    background-color: var(--white);
+}
+
+// ...........................
+
+.slider {
+    padding-top: 50px;
+}
+
+.brans_hidden {
+    display: block;
+}
+
+.slider__next {
+    display: none;
+}
+
+.slider__block-text {
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    height: 55px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+    font-family: 'TT Lakes';
+    color: var(--grey);
+
+}
+
+.slider__content {
+    margin-left: 16px;
+    width: 300px;
+}
+
+.slider__flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 16px;
+    column-gap: 32px;
+}
+
+.slider__block-position {
+    width: 320px;
+    padding-top: 24px;
+    padding-bottom: 50px;
+}
+
+.slider__flex-hid {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 16px;
+    column-gap: 32px;
+    width: 1056px;
+}
+
+.slider__next {
+    padding: 24px 0px 0px 31px;
+}
+
+.slider__btn {
+    display: flex;
+    gap: 8px;
+    border: none;
+    background-color: var(--white-low);
+}
+
+.slider__btn p {
+    font-family: 'TT Lakes';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: var(--text);
+}
+
+.slider__block-position {
+    display: none;
+}
+
+.swiper {
+    width: 320px;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    position: static;
+    margin-top: 20px;
+}
+
+.mobi-vir {
+    padding: 16px 0px 24px 0px;
+    display: block;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-wrapper {
+    width: 92% !important;
+}

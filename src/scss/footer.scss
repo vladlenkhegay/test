@@ -1,0 +1,21 @@
+.footer {
+    background-color: var(--white-low);
+}
+
+.footer__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 288px;
+    height: 130px;
+    margin: 0 auto;
+
+    font-family: 'TT Lakes';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: var(--grey);
+}

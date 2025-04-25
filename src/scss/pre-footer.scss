@@ -1,0 +1,53 @@
+.chake {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 320px;
+    height: 224px;
+
+    padding-top: 16px;
+}
+
+.chake__top {
+    width: 288px;
+
+    font-family: 'TT Lakes Mini';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: var(--text);
+}
+
+.chake__botom {
+    width: 192px;
+    height: 54px;
+    margin-top: 16px;
+
+    font-family: 'TT Lakes';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+}
+
+.chake__text {
+    position: relative;
+}
+
+.chake {
+    width: 100%;
+    padding-top: 24px;
+}
+
+.chake__text::after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 12px;
+    background-image: url("/src/image/next.png");
+    background-size: 8px 12px;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+    margin-top: 7px;
+}

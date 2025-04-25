@@ -1,5 +1,6 @@
 {
   "name": "web-last-block",
+  "homepage" : "https://vladlenkhegay.github.com/test",
   "version": "1.0.0",
   "description": "",
   "keywords": [
@@ -15,7 +16,7 @@
   "scripts": {
     "build": "webpack --mode production",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "deploy": "npm run build && gh-pages -d dist",
     "dev": "webpack --mode development",
     "start": "webpack serve --mode development --open",
     "watch": "webpack --mode development --watch"
@@ -34,7 +35,7 @@
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.8.1",
     "file-loader": "^6.2.0",
-    "gh-pages": "^5.0.0",
+    "gh-pages": "5.0.0",
     "html-webpack-plugin": "^5.5.3",
     "mini-css-extract-plugin": "^2.7.6",
     "postcss-loader": "^7.3.3",
