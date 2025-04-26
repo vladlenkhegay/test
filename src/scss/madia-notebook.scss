@@ -1,4 +1,13 @@
 @media (min-width: 1400px) {
+    .service::after {
+        z-index: 12;
+    }
+
+    .bg-color {
+        background-color: var(--white-low);
+        width: 100%;
+    }
+
     .recla__y {
         position: absolute;
         z-index: 12;
@@ -14,7 +23,6 @@
         width: 440px;
         height: 100%;
         background-color: var(--white);
-        /* box-shadow: -2px 0px 4px 0px #454f7ed2; */
 
         position: absolute;
         top: 0;
@@ -23,13 +31,6 @@
         display: flex;
         justify-content: center;
     }
-    
-    // .recla__hidden2 {
-    //     display: none;
-    //     position: relative;
-    //     z-index: 11;
-    // }
-
 
     .recla {
         width: 376px;
@@ -253,7 +254,8 @@
 
     .service::after {
         top: -18px;
-        left: -25px;
+        left: -12px;
+        width: 5px;
     }
 
     .header__nav,
@@ -287,10 +289,6 @@
         width: 530px;
         height: 310px;
         margin-top: 0px;
-    }
-
-    .content__feedback {
-        display: block;
     }
 
     .service_down {

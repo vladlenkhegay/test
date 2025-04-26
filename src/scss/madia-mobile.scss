@@ -1,4 +1,8 @@
 @media (min-width: 430px) {
+    .bg-color {
+        background-color: var(--white);
+        width: 100%;
+    }
 
     .recla__y {
         position: absolute;
@@ -293,7 +297,7 @@
 
     .service::after {
         top: 6px;
-        left: -20px;
+        left: -12px;
     }
 
 
