@@ -5,15 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Webpack 5 Starter</title>
-    
+    <title>
+        Webpack 5 Starter
+    </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 <script defer="defer" src="./js/bundle.js"></script><link href="style.css" rel="stylesheet"></head>
 
 <body>
     <div class="flex">
         <div class="ob" id="menuaside">
             <div class="aside-part">
-                
                 <div class="fon"></div>
 
                 <div class="aside">
@@ -80,7 +81,7 @@
                         <div class="aside-button aside-button_margin">
                             <div class="aside__contact aside__contact_gap">
                                 <div class="aside-button__items">
-                                    
+
                                     <a class="btn" href="" id="link3">
                                         <img src="image/4.png" alt="">
                                     </a>
@@ -211,13 +212,37 @@
                                     клиентов. Мы
                                     гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас
                                     родным и
-                                    близким.</p>
+                                    близким.
+                                </p>
 
+                                <div id="hiddenElement-content" class="content__margin" style="display: none;">
+                                    <p class="content__text content__hid">Мы успешно работаем с 1992 года и
+                                        заслужили
+                                        репутацию надежного партнера, что подтверждает большое количество постоянных
+                                        клиентов. Мы
+                                        гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют
+                                        нас
+                                        родным и
+                                        близким.
+                                    </p>
 
-                                <div class="content__div">
-                                    <a href=""><img src="image/icon.svg" alt=""></a>
-                                    <p class="content__next">Читать далее</p>
+                                    <p class="content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Laboriosam fugiat libero porro maxime ad at cupiditate voluptatem atque? Nihil
+                                        suscipit itaque corporis velit voluptate ipsam, est reiciendis consequuntur
+                                        recusandae a.
+                                    </p>
+                                    <p class="content__text content__text_margin">Lorem ipsum, dolor sit amet
+                                        consectetur adipisicing elit. Quis id praesentium delectus a et natus!
+                                    </p>
                                 </div>
+
+                                <button id="toggleButton-content" class="content__open">
+                                    <div class="content__div">
+                                        <a href=""><img id="toggleIcon-content" src="image/icon.svg" alt=""></a>
+                                        <p id="toggleText-content" class="content__next">Читать далее</p>
+                                    </div>
+                                </button>
+
                             </div>
 
                             <div style="background-image: url(image/cps.png);" class="content__img content__block-2">
@@ -539,7 +564,7 @@
                         </div>
                     </div>
 
-                    <div class="remont__appir" id="hiddenElement-remon">
+                    <div class="remont__appir" id="hiddenElement-remon" style="display: none;">
                         <div class="remont__hiden">
                             <div class="remont__hiden-flex">
                                 <div class="remont__flex">
@@ -980,7 +1005,7 @@
             <div class="aside__right">
                 <div class="recla">
                     <div class="recla__conect">
-                        <p>Обратная связь</p>    
+                        <p>Обратная связь</p>
                         <button class="recla__y">
                             <a class="recla__x" href="" id="closeMenu-2">
                                 <img src="image/7.png" alt="">
@@ -993,9 +1018,10 @@
                         <input type="tel" placeholder="Телефон">
                         <input type="email" placeholder="Электронная почта">
                         <textarea type="text" placeholder="Сообщение"></textarea>
-                        <p>Нажимая “отправить”, вы даете согласие на <span>обработку персональных данных</span> и соглашаетесь с нашей <span>политикой конфиденциальности</span></p>
+                        <p>Нажимая “отправить”, вы даете согласие на <span>обработку персональных данных</span> и
+                            соглашаетесь с нашей <span>политикой конфиденциальности</span></p>
                     </div>
-                    
+
                     <div class="recla__block">
                         <button class="recla__btn">
                             <p>ОТПРАВИТЬ</p>
@@ -1011,7 +1037,7 @@
             <div class="aside__right">
                 <div class="recla">
                     <div class="recla__conect">
-                        <p>Заказать звонок</p>    
+                        <p>Заказать звонок</p>
                         <button class="recla__y">
                             <a class="recla__x" href="" id="closeMenu-2">
                                 <img src="image/7.png" alt="">
@@ -1021,9 +1047,10 @@
 
                     <div class="recla__input">
                         <input type="tel" placeholder="Телефон">
-                        <p>Нажимая “отправить”, вы даете согласие на <span>обработку персональных данных</span> и соглашаетесь с нашей <span>политикой конфиденциальности</span></p>
+                        <p>Нажимая “отправить”, вы даете согласие на <span>обработку персональных данных</span> и
+                            соглашаетесь с нашей <span>политикой конфиденциальности</span></p>
                     </div>
-                    
+
                     <div class="recla__block">
                         <button class="recla__btn">
                             <p>ОТПРАВИТЬ</p>
@@ -1036,7 +1063,7 @@
 
     </div>
 
-    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 </body>
 
