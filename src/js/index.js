@@ -82,25 +82,49 @@ closeMenuLink.addEventListener('click', (event) => {
     menu1.style.display = 'none';  // Прячем меню
 });
 
-function setupMenu(link1Id, link2Id, menuId) {
-    let menu = document.getElementById(menuId);
-    let isOpen = false; // Флаг состояния
+// function setupMenu(link1Id, link2Id, menuId) {
+//     let menu = document.getElementById(menuId);
+//     let isOpen = false; // Флаг состояния
 
-    function toggleMenu(event) {
-        event.preventDefault();
-        isOpen = !isOpen; // Переключаем флаг
-        menu.style.display = isOpen ? "block" : "none";
+//     function toggleMenu(event) {
+//         event.preventDefault();
+//         isOpen = !isOpen; // Переключаем флаг
+//         menu.style.display = isOpen ? "block" : "none";
+//     }
+
+//     document.getElementById(link1Id).addEventListener("click", toggleMenu);
+//     document.getElementById(link2Id).addEventListener("click", toggleMenu);
+// }
+
+// // Настраиваем первое меню
+// setupMenu("link1", "link2", "menu1");
+
+// // Настраиваем второе меню
+// setupMenu("link3", "link4", "menu2");
+
+function setupMenu(openId, menuId, closeId, overlayId) {
+    const openBtn = document.getElementById(openId);
+    const menu = document.getElementById(menuId);
+    const closeBtn = document.getElementById(closeId);
+    const overlay = document.getElementById(overlayId);
+
+    openBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        menu.style.display = "block";
+    });
+
+    function closeMenu(e) {
+        e.preventDefault();
+        menu.style.display = "none";
     }
 
-    document.getElementById(link1Id).addEventListener("click", toggleMenu);
-    document.getElementById(link2Id).addEventListener("click", toggleMenu);
+    closeBtn.addEventListener("click", closeMenu);
+    overlay.addEventListener("click", closeMenu);
 }
 
-// Настраиваем первое меню
-setupMenu("link1", "link2", "menu1");
-
-// Настраиваем второе меню
-setupMenu("link3", "link4", "menu2");
+  // Настроим оба меню
+setupMenu("open1", "menu1", "close1", "overlay1");
+setupMenu("open2", "menu2", "close2", "overlay2");
 
 document.getElementById("toggleButton-content").addEventListener("click", function () {
     let element = document.getElementById("hiddenElement-content");
@@ -119,3 +143,14 @@ document.getElementById("toggleButton-content").addEventListener("click", functi
         buttonIcon.alt = "Показать";
     }
 });
+
+// const triggerDiv = document.getElementById('triggerDiv');
+// const hideButton = document.getElementById('hideButton');
+// const targetDiv = document.getElementById('targetDiv');
+
+// function hideTarget() {
+//     targetDiv.style.display = 'none';
+// }
+
+// triggerDiv.addEventListener('click', hideTarget);
+// hideButton.addEventListener('click', hideTarget);
